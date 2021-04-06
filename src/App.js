@@ -7,6 +7,7 @@ import ExercisesList from "./components/exercises-list.component";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
+import UserList from "./components/users-list.component";
 
 /**
  * Mapping of "Links" to "Components".
@@ -23,6 +24,7 @@ function App() {
                 <Route path={"/edit/:id"} component={EditExercise}/>
                 <Route path={"/create"} component={CreateExercise}/>
                 <Route path={"/user"} component={CreateUser}/>
+                <Route path={"/userlist"} component={UserList}/>
             </div>
         </Router>
     );
